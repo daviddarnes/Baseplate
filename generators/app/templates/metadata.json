@@ -1,0 +1,5 @@
+{
+	"name": "<%= name %>",
+	"thumbnail": "thumbnail.png",
+	"widgetVersion":2
+}

@@ -2,23 +2,32 @@
   "name": "generator-basekit-template",
   "version": "1.0.0",
   "description": "A Yeoman generator for creating BaseKit templates",
-  "main": "index.js",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "daviddarnes/generator-basekit-template.git",
+  "author": {
+    "name": "David Darnes",
+    "email": "me@daviddarnes.com",
+    "url": "https://github.com/daviddarnes"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/daviddarnes/generator-basekit-template.git"
-  },
+  "files": [
+    "generators"
+  ],
   "keywords": [
     "yeoman-generator",
     "basekit",
     "template"
   ],
-  "author": "David Darnes",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/daviddarnes/generator-basekit-template/issues"
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.2"
   },
-  "homepage": "https://github.com/daviddarnes/generator-basekit-template"
+  "homepage": "https://github.com/daviddarnes/generator-basekit-template",
+  "devDependencies": {
+    "mocha": "*"
+  }
 }
