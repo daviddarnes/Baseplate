@@ -28,7 +28,7 @@ npm install -g generator-basekit-template
 Finally, initiate the generator:
 
 ```bash
-yo generator basekit template
+yo basekit-template
 ```
 
 Now you should have a folder containing everything you'll need to create your own BaseKit template.
