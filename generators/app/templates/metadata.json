@@ -1,7 +1,7 @@
 {
 	"name": "<%= name %>",
 	"thumbnail": "<%= folder %>.png",
-	"widgetVersion":2
+	"widgetVersion":2,
 	"images": [
 		"images/feature.jpg",
 		"images/logo.png"

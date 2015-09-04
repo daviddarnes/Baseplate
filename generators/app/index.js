@@ -100,13 +100,24 @@ module.exports = yeoman.generators.Base.extend({
       this.templatePath('thumbnail.png'),
       this.destinationPath(this.props.folder + '/' + this.props.folder + '.png')
     );
+    this.fs.copyTpl(
+      this.templatePath('less/*'),
+      this.destinationPath(this.props.folder + '/less/')
+    );
 
     this.fs.copyTpl(
       this.templatePath('README.md'),
       this.destinationPath(this.props.folder + '/README.md'),
       {
         name: this.props.name,
-        description: this.props.description
+        description: this.props.description,
+        backgroundcolour: this.props.backgroundcolour,
+        contrastcolour: this.props.contrastcolour,
+        buttoncolour: this.props.buttoncolour,
+        titlecolour: this.props.titlecolour,
+        paragraphcolour: this.props.paragraphcolour,
+        navtextcolour: this.props.navtextcolour,
+        headerbackgroundcolour: this.props.headerbackgroundcolour
       }
     );
 
@@ -114,7 +125,16 @@ module.exports = yeoman.generators.Base.extend({
       this.templatePath('metadata.json'),
       this.destinationPath(this.props.folder + '/metadata.json'),
       {
-        name: this.props.name
+        name: this.props.name,
+        folder: this.props.folder,
+        description: this.props.description,
+        backgroundcolour: this.props.backgroundcolour,
+        contrastcolour: this.props.contrastcolour,
+        buttoncolour: this.props.buttoncolour,
+        titlecolour: this.props.titlecolour,
+        paragraphcolour: this.props.paragraphcolour,
+        navtextcolour: this.props.navtextcolour,
+        headerbackgroundcolour: this.props.headerbackgroundcolour
       }
     );
   }
