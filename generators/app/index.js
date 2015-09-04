@@ -17,61 +17,61 @@ module.exports = yeoman.generators.Base.extend({
         type: 'input',
         name: 'name',
         message: 'Whats the name of your template?',
-        default: "BaseKit Template"
+        default: 'BaseKit Template'
       },
       {
         type: 'input',
         name: 'folder',
         message: 'Whats the folder name of your template?',
-        default: "basekit-template"
+        default: 'basekit-template'
       },
       {
         type: 'input',
         name: 'description',
         message: 'Describe your template:',
-        default: "A BaseKit template"
+        default: 'A BaseKit template'
       },
       {
         type: 'input',
         name: 'backgroundcolour',
         message: 'Background colour of your template:',
-        default: "#ffffff"
+        default: '#ffffff'
       },
       {
         type: 'input',
         name: 'contrastcolour',
         message: 'Contrast colour of your template, e.g. links:',
-        default: "#3295e1"
+        default: '#3295e1'
       },
       {
         type: 'input',
         name: 'buttoncolour',
         message: 'The colour of your buttons:',
-        default: "#444444"
+        default: '#444444'
       },
       {
         type: 'input',
         name: 'titlecolour',
         message: 'The colour of your titles:',
-        default: "#333333"
+        default: '#333333'
       },
       {
         type: 'input',
         name: 'paragraphcolour',
         message: 'The colour of your body copy:',
-        default: "#333333"
+        default: '#333333'
       },
       {
         type: 'input',
         name: 'navtextcolour',
         message: 'The colour of your navigation items:',
-        default: "#333333"
+        default: '#333333'
       },
       {
         type: 'input',
         name: 'headerbackgroundcolour',
         message: 'The background colour of your header:',
-        default: "#F1F1F1"
+        default: '#F1F1F1'
       }
     ];
 
