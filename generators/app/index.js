@@ -104,6 +104,10 @@ module.exports = yeoman.generators.Base.extend({
       this.templatePath('less/*'),
       this.destinationPath(this.props.folder + '/less/')
     );
+    this.fs.copyTpl(
+      this.templatePath('images/*'),
+      this.destinationPath(this.props.folder + '/images/')
+    );
 
     this.fs.copyTpl(
       this.templatePath('README.md'),
